@@ -3,13 +3,40 @@
 <head>
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
 
-<h2>Contact Me</h2>
+<header>
+    <h1>Contact</h1>
+</header>
 
-<button onclick="showAlert()">Click to Contact</button>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="toggleTheme()">Toggle Theme</button>
 
+</nav>
+
+<div class="container fade-in">
+    <div class="card">
+        <p>Click below to view contact details.</p>
+        <button onclick="showContact()">Show Contact</button>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <p>📧 adithya@email.com</p>
+        <p>📱 9XXXXXXXXX</p>
+    </div>
+</div>
+
+<footer>
+    © 2025 Adithya V
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
